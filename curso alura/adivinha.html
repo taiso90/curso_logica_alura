@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<input/>
+<button>botão</button>
+
+<script>
+var segredos = [5,7,10,2];
+var input = document.querySelector("input");
+input.focus();
+function verifica(){
+    if(input.value == segredos){
+        alert("você acertou");
+    } else{
+        alert("você errou");
+    }
+    input.value ="";
+    input.focus();
+}
+var button = document.querySector("button");
+button.onclick = verifica;
+
+
+</script>

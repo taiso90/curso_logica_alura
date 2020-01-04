@@ -1,0 +1,30 @@
+
+    <meta charset="utf-8">
+    <input/>
+    <button>Confirma</button>
+
+    
+    <script>
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+    function mostra(frase){
+        documento.write(frase);
+        pulaLinha();
+    }
+    var numeroPensado = Math.round(Math.random() * 10); //gera numeros aleatorios
+    var tentativas = 1;
+    
+// O loop não funcionou com while tentei com for funcionando pefeitamente.
+    for(tentativas; tentativas <= 3; tentativas++) {
+        var input = document.querySelector("input");
+        if (input == numeroPensado) {
+            document.write("Acertou");  
+            break;
+            
+        } else {
+            document.write("Errou");
+            pulaLinha();
+        }
+    }
+    </script>

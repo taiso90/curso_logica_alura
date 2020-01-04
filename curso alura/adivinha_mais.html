@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<input/>
+<button>Compare com meu segredo</button>
+<script>
+    var segredo = Math.round(Math.random) *10;
+var input = document.querySelector("input"); //pega o que esta no input
+function verifica(){
+    if(input.value == segredo){
+    alert("acertou");
+} else{
+    alert("errou");
+}
+input.value =""; //limpa a caixa de texto
+input.focus(); //da foco ao input
+}
+var button = document.querySelector("button");// devese dizer o  nome da tag a ser usada 
+button.onclick = verifica; // parausar a funcao ao precionar um botao nao se usa parenteses
+</script>

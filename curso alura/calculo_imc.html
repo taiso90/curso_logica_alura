@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function exibe(){
+        document.write("O IMC é " + calculaIMC());
+        document.write("<br><br>");
+        document.write("O IMC é " + calculaIMC());
+    }
+
+    function calculaIMC(){
+        return  peso / (altura * altura);
+    }
+var peso = parseFloat(prompt("Digite seu peso"));
+var altura = parseFloat(prompt("Digite sua altura"));
+var imc = peso /(altura * altura);
+
+
+if(imc < 18.5){
+    exibe("Abaixo do peso");
+}
+
+else( imc > 35);{
+    exibe("Acima do peso");
+}
+if(imc >= 18.5 && imc <= 35){
+    exibe("Peso ideal");
+}
+    
+    </script>
+</body>
+</html>
